@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --Primary-DarkMagenta: hsl(300, 43%, 22%);
+  --Primary-Pink: hsl(333, 80%, 67%);
+
+  --Secondary-DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --Secondary-LightGrayishMagenta: hsl(300, 24%, 96%);
+  --Secondary-White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, p{
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+h1{
+  color: var(--Primary-DarkMagenta);
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+h2{
+  color: var(--Primary-DarkMagenta);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+img{
+  border-radius: 60px;
+}
+
+.background{
+  overflow: hidden;
+  padding: 40px 25px;
+    background: 
+    url("Images/bg-pattern-top-mobile.svg")
+    no-repeat center top,
+    url("Images/bg-pattern-bottom-mobile.svg")
+    no-repeat center bottom;
+}
+
+.productDescription{
+  display: block;
+}
+
+.description{
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.stars{
+  display: grid;
+  grid-gap: 20px;
+  padding-bottom: 30px;
+}
+
+.starBox{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1;
+  border-radius: 15px;
+  padding-top: 10px;
+  background-color: var(--Secondary-LightGrayishMagenta);
+}
+
+.customerReviews{
+  display: grid;
+  grid-gap: 18px;
+}
+
+.customerRevStatus{
+  color: var(--Primary-Pink);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+  margin: -10px 0px 0px 0px;
+}
+
+.customerReviews{
+  display: grid;
+  grid-gap: 20px;
+}
+
+.reviewblock{
+  display: block;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--Primary-DarkMagenta);
+  color: white;
+  border-radius: 8px;
+  padding: 30px;
+  justify-self: center;
+}
+
+.RevFlex{
+  display: flex;
+}
+
+.customerReviewName{
+  padding-left: 30px;
+}
+
+.customerReviewWording{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+
+
